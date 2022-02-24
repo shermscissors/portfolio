@@ -1,2 +1,2 @@
-# portfolio
-First template of my professional portfolio
+# Don't Mind Me Just Yet...
+First template of my professional portfolio, if you're reading this then I'm probably working still..
