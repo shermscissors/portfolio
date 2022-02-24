@@ -5,7 +5,24 @@
 	display: flex;
 	/* Aligns Text to center of Container **IMPORTANT... TO ME** */
 	justify-self: center;
+	grid-column: 1;
+	grid-row: 1;
 	color: green;
+}
+
+/* Easy to comprehend GRID for all the projects */
+
+.projects-grid-template {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.1fr 1fr;
+	margin: 0;
+	width: 100%;
+}
+
+.project-photo {
+	grid-column: 1;
+	grid-row: 2;
 }
 
 /* ID's */
@@ -15,6 +32,7 @@
 	padding-top: 2%;
 	padding-bottom: 0;
 	border: 2px solid black;
+	background-color: rgb(156, 70, 70);
 }
 
 #projects-gallery {
@@ -27,7 +45,6 @@
 
 /* Lower Level */
 #project-1 {
-	display: flex;
 	grid-column: 1;
 	width: 100%;
 	/* background-image: url(/assets/project1.png);
@@ -35,21 +52,58 @@
     background-size: 400%;
     background-repeat: no-repeat; */
 }
+#project-2 {
+	grid-column: 2;
+	width: 100%;
+	/* background-image: url(/assets/project1.png);
+    background-position: center;
+    background-size: 400%;
+    background-repeat: no-repeat; */
+}
+#project-3 {
+	grid-column: 3;
+	width: 100%;
+	/* background-image: url(/assets/project1.png);
+    background-position: center;
+    background-size: 400%;
+    background-repeat: no-repeat; */
+}
+#project-4 {
+	grid-column: 4;
+	width: 100%;
+	/* background-image: url(/assets/project1.png);
+    background-position: center;
+    background-size: 400%;
+    background-repeat: no-repeat; */
+}
 
-@media (max-width) {
+@media (max-width: 500px) {
 	#projects-gallery {
 		display: grid;
 		grid-template-columns: 2fr;
 		/* A row for each project */
+		grid-template-columns: 2fr;
 		grid-template-rows: 1fr 1fr 1fr 1fr;
 		width: 100%;
 	}
 	#project-1 {
-		display: flex;
 		grid-row: 1;
+		grid-column: 1;
 		/* background-image: url(/assets/project1.png);
     background-position: center;
     background-size: 400%;
     background-repeat: no-repeat; */
+	}
+	#project-2 {
+		grid-column: 1;
+		grid-row: 2;
+	}
+	#project-3 {
+		grid-column: 1;
+		grid-row: 3;
+	}
+	#project-4 {
+		grid-column: 1;
+		grid-row: 4;
 	}
 }
