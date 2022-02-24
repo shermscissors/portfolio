@@ -1,0 +1,158 @@
+/* Main Classes */
+
+/* Title of the Projects */
+.projects-subheading {
+	display: flex;
+	/* Aligns Text to center of Container **IMPORTANT... TO ME** */
+	justify-self: center;
+	align-self: flex-end;
+	grid-column: 1;
+	grid-row: 1;
+	color: green;
+	filter: grayscale(0);
+}
+
+.anchor-reset {
+	color:white;
+	padding: 10%;
+}
+
+/* Easy to comprehend GRID for all the projects */
+
+.projects-grid-template {
+	filter: grayscale(1);
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.1fr 1fr;
+	margin: 0;
+	width: 100%;
+	transition: filter 500ms ease-in-out;
+}
+.projects-grid-template:hover {
+	filter: grayscale(0);
+}
+
+.project-photo {
+	grid-column: 1;
+	grid-row: 2;
+}
+
+/* Additional Info Bar on Hover */
+
+.lower-third {
+	opacity: 0;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-items: flex-end;
+	align-items: center;
+	background-color: rgb(100, 179, 231);
+	width: 100%;
+	height: 100%;
+	color: rgb(255, 255, 255);
+}
+
+.lower-third:hover {
+	/* Animation still a bit buggy, will fix eventually? */
+	animation-name: slide-in;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+}
+
+/* ID's */
+
+/* Higher Level */
+#projects-container {
+	padding-top: 2%;
+	padding-bottom: 0;
+	border-top: 2px solid rgb(0, 0, 0);
+	background-color: rgb(231, 93, 93);
+}
+
+#projects-gallery {
+	display: grid;
+	/* A column for each project */
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 2fr;
+	height: 300px;
+}
+
+#projects-heading {
+	font-family: 'Courier New', Courier, monospace;
+	margin: 0 0 2% 0;
+}
+/* Lower Level */
+#project-1 {
+	grid-column: 1;
+	width: 100%;
+	background-image: url(/public/assets/project1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#project-2 {
+	grid-column: 2;
+	width: 100%;
+	background-image: url(/public/assets/project2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#project-3 {
+	grid-column: 3;
+	width: 100%;
+	background-image: url(/public/assets/project3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#project-4 {
+	grid-column: 4;
+	width: 100%;
+	background-image: url(/public/assets/project4.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Mobile Styling */
+@media (max-width: 500px) {
+	#projects-heading {
+		
+	}
+	#projects-gallery {
+		display: grid;
+		grid-template-columns: 1fr;
+		/* A row for each project */
+		grid-template-rows: 2fr 2fr 2fr 2fr;
+		width: 100%;
+	}
+	#project-1 {
+		grid-row: 1;
+		grid-column: 1;
+	}
+	#project-2 {
+		grid-column: 1;
+		grid-row: 2;
+
+	}
+	#project-3 {
+		grid-column: 1;
+		grid-row: 3;
+	}
+	#project-4 {
+		grid-column: 1;
+		grid-row: 4;
+	}
+}
+
+/* Animations */
+
+@keyframes slide-in {
+	0% {
+		opacity: 0;
+		height: 0;
+	}
+	100% {
+		opacity: 1;
+		height: 100%;
+	}
+}

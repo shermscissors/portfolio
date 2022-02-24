@@ -1,0 +1,18 @@
+/* Main Classes */
+
+/* ID/s */
+
+/* Higher Level */
+#aboutme-container {
+	/* Entire ABOUT ME page container */
+}
+
+#aboutme-heading {
+	margin: 0 0 2% 0;
+}
+
+#aboutme-paragraph {
+	/* Gives a bit of room on sides of the container... Easier to read */
+	margin: 0 5%;
+    color: rgb(82, 82, 82);
+}
