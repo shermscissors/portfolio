@@ -1,6 +1,55 @@
-.projects-container {
+/* Main Classes */
+
+/* Title of the Projects */
+.projects-subheading {
+	display: flex;
+	/* Aligns Text to center of Container **IMPORTANT... TO ME** */
 	justify-self: center;
-	align-self: center;
-    border: 2px solid black;
-    padding: 30px 0;
+	color: green;
+}
+
+/* ID's */
+
+/* Higher Level */
+#projects-container {
+	padding-top: 2%;
+	padding-bottom: 0;
+	border: 2px solid black;
+}
+
+#projects-gallery {
+	display: grid;
+	/* A column for each project */
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 2fr;
+	height: 300px;
+}
+
+/* Lower Level */
+#project-1 {
+	display: flex;
+	grid-column: 1;
+	width: 100%;
+	/* background-image: url(/assets/project1.png);
+    background-position: center;
+    background-size: 400%;
+    background-repeat: no-repeat; */
+}
+
+@media (max-width) {
+	#projects-gallery {
+		display: grid;
+		grid-template-columns: 2fr;
+		/* A row for each project */
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		width: 100%;
+	}
+	#project-1 {
+		display: flex;
+		grid-row: 1;
+		/* background-image: url(/assets/project1.png);
+    background-position: center;
+    background-size: 400%;
+    background-repeat: no-repeat; */
+	}
 }
