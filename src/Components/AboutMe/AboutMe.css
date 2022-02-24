@@ -1,0 +1,8 @@
+#aboutme-container {
+    /* Entire ABOUT ME page container */
+}
+#aboutme-paragraph{
+    /* Gives a bit of room on sides of the container... Easier to read */
+    margin: 0 5%;
+
+}
