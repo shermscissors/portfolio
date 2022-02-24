@@ -1,0 +1,41 @@
+header {
+	/* Background : Centered with room for items in the center */
+	background-image: url(/public/assets/clouds.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	grid-row: 1 / span 1;
+	width: 100%;
+	padding: 25% 0;
+	align-items: center;
+	justify-items: center;
+	animation-name: color-in;
+	animation-duration: 2500ms;
+}
+
+#masthead-h1 {
+	font-size: 150%;
+	color: rgb(196, 252, 144);
+	margin: 1% 0;
+	display: flex;
+	align-items: center;
+	justify-items: center;
+}
+
+#masthead-button {
+	/* Align masthead buttons to center of page */
+	display: block;
+	justify-self: center;
+	align-self: center;
+}
+
+@keyframes color-in {
+	0% {
+		filter: grayscale(1);
+	}
+	100% {
+		filter: grayscale(0);
+
+	}
+}
