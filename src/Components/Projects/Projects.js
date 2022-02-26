@@ -8,7 +8,7 @@ function Projects(props) {
 		<div className='containers' id='projects-container'>
 			{/* Shares same h1 CLASS CSS from the APP.css */}
 			<h1 className='headings' id='projects-heading'>
-				Projects
+				&lt;Projects /&gt;
 			</h1>
 			{/* Creates DIV so that it can have a GRID DISPLAY inside of a FLEX container */}
 			<div id='projects-gallery'>

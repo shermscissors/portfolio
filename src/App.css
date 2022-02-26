@@ -4,20 +4,28 @@
 	margin: 0 auto;
 }
 html {
-	height: 100%;
+	height: 90%;
 }
-
-
-
 footer {
+	display: block;
 	background-color: rgb(255, 226, 172);
 	grid-row: 3;
 	width: 100%;
-	padding: 5% 0;
+	padding: 2% 0;
 }
 
 a {
 	text-decoration: none;
+}
+h6 {
+	display: flex;
+	justify-self: right;
+	align-self: right;
+	color: rgb(91, 180, 209);
+	transition: 500ms;
+}
+h6:hover {
+	color: rgb(79, 156, 182);
 }
 
 button {
@@ -42,7 +50,7 @@ button:hover {
 .App {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1.5fr 1fr .5fr;
+	grid-template-rows: 1.4fr 1fr .2fr;
 }
 
 /* All the main DIVs */
@@ -50,7 +58,7 @@ button:hover {
 	/* Main class for all my components. Aligns things to the center for visual pleasure */
 	justify-self: center;
 	align-self: center;
-	padding: 5% 0;
+	padding: 2% 0;
 }
 
 .body-container {
@@ -63,6 +71,7 @@ button:hover {
 /* Standard stlying for main h1s */
 .headings {
 	color: rgb(255, 255, 255);
+	font-family: 'Courier New', Courier, monospace;
 	font-size: 30px;
 	margin: 0;
 	padding: 0;
@@ -73,5 +82,11 @@ button:hover {
 
 /* ID Specific CSS */
 
+#footer-heading {
+	/* align-items: flex-start; */
+	margin-bottom: 1%;
+	margin-top: 0;
+	color: rgb(255, 255, 255);
+}
 
 /* Animations */
